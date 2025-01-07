@@ -18,5 +18,11 @@
         <button type="submit">Login</button>
     </form>
 </div>
+
+{% for message in messages %}
+    <div style="color: red; text-align: center">
+        <strong>Erro! </strong> {{ message }}
+    </div>
+{% endfor %}
 </body>
 </html>

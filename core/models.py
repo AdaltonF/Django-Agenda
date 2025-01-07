@@ -16,4 +16,7 @@ class Event(models.Model):
         return self.title
 
     def get_date(self):
-        return self.date.strftime('%d/%m/%Y %H:%M')
+        return self.date.strftime('%d/%m/%Y')
+
+    def get_input_date(self):
+        return self.date.strftime('%Y-%m-%d')
